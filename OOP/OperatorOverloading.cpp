@@ -1,5 +1,5 @@
 // Unary Operator overloading
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 class Demo
 {
