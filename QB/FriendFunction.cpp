@@ -15,13 +15,13 @@ public:
     }
 
     // Friend function declaration
-    friend int printSideLength(Square);
+    friend int printSide(Square);
 };
 
 // Friend function definition
-int printSideLength(Square s)
+int printSide(Square s)
 {
-    s.side += 10;  // Increasing the side length by 10
+    s.side = s.side + 10;  // Increasing the side length by 10
     return s.side; // Returning the new side length
 }
 
@@ -29,7 +29,7 @@ int main()
 {
     Square s;
 
-    cout << "Side length of Square: " << printSideLength(s) << endl;
+    cout << "Side length of Square: " << printSide(s) << endl;
 
     return 0;
 }

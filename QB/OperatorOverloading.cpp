@@ -1,5 +1,5 @@
 // Q no 1
-// Unary Operator overloading
+// Unary Operator overloaobjing
 #include <bits/stdc++.h>
 using namespace std;
 class Demo
@@ -15,20 +15,23 @@ public:
     }
     void show()
     {
-        cout << "A = " << a << " " << "B = " << b << endl;
+        cout << "A = " << a << endl;
+        cout << "B = " << b << endl;
     }
-    void operator-()
+    void operator -()
     {
-        a = -a;
-        b = -b;
+        a = a+b;
+        b = a*b;
     }
 };
 
 int main()
 {
-    Demo d(-10, 20);
-    d.show();
-    -d;
-    d.show();
+    Demo obj(10, 20);
+    cout << "before calling " << endl;
+    obj.show();
+    -obj;
+    cout << "after calling" << endl;
+    obj.show();
     return 0;
 }

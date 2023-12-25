@@ -6,11 +6,11 @@ class Rectangle
 public:
     int length;
     int width;
-
-    Rectangle(int l, int w)
+ 
+    Rectangle()
     {
-        length = l;
-        width = w;
+        length = 20;
+        width = 15;
     }
 
     void display()
@@ -21,7 +21,7 @@ public:
 };
 int main()
 {
-    Rectangle rect(20, 10);
+    Rectangle rect;
     rect.display();
 
     return 0;
