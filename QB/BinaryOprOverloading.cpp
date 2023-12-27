@@ -17,7 +17,8 @@ public:
         Fraction sum;
         sum.numerator = (numerator * other.denominator) + (other.numerator * denominator);
         sum.denominator = denominator * other.denominator;
-        return sum;
+        return numerator;
+        return denominator;
     }
 
     // Function to display the fraction

@@ -15,7 +15,7 @@ public:
     }
 
     // Friend function declaration
-    friend int printSide(Square);
+    friend int printSide(Square s);
 };
 
 // Friend function definition

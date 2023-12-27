@@ -1,24 +1,31 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// base class declaration.
-class Animal
+class A
 {
 public:
-    string color = "Black";
+    void information()
+    {
+        cout << "class A is executed " << endl;
+    }
 };
 
-// inheriting Animal class.
-class Dog : public Animal
+class B : public A
 {
 public:
-    string color = "Grey";
+    void information()
+    {
+        cout << "class B is executed" << endl;
+    }
 };
 
-// Driver code
-int main(void)
+int main()
 {
-    Animal d = Dog(); // accessing the field by reference
-                      // variable which refers to derived
-    cout << d.color;
+    A a;
+    a.information();
+
+    B b;
+    b.information();
+
+    return 0;
 }
