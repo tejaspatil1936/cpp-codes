@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -24,7 +23,7 @@ int main()
     }
     else
     {
-        cout << "ot is not a duck no\n";
+        cout << "it is not a duck no\n";
     }
 
     return 0;

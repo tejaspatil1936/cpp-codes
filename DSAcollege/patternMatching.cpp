@@ -21,7 +21,7 @@ int main()
 
             if (L == lengthOfReq-1)
             {
-                foundAt = K;
+                foundAt = K;  
                 break;
             }
 
@@ -41,7 +41,7 @@ int main()
 
         if (foundAt != 0)
         {
-            cout << "foundAt of Req in Main = " << foundAt << endl;
+            cout << "found At index  = " << foundAt << endl;
         }
         else
         {
