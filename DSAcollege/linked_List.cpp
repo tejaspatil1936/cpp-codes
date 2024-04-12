@@ -11,7 +11,7 @@ int main()
     node *start = NULL;
     cout << "Enter the size and elements of the linked list\n";
     cin >> n;
-    int i = 0;
+    int i = 0; 
     do
     {
         cin >> data;
