@@ -1,18 +1,18 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 struct node
 {
     int info;
     node *link;
-};
+} *start = NULL;
 int main()
 {
-    int n, data;
-    node *start = NULL;
-    cout << "Enter the size and elements of the linked list\n";
-    cin >> n;
-    int i = 0;
-    do
+    int size, data;
+
+    cout << "Enter the size of linked list : ";
+    cin >> size;
+
+    for (int i = 0; i < size; i++)
     {
         cin >> data;
         node *temp = new node;
@@ -24,24 +24,32 @@ int main()
         }
         else
         {
-            node *ptr = start;
+            node *ptr;
+            ptr = start;
             while (ptr->link != NULL)
             {
                 ptr = ptr->link;
             }
             ptr->link = temp;
         }
-        i++;
-    } while (i < n);
-    
-    cout << "Elements in the linked list are as follows:\n";
-    struct node *p;
+    }
+    node *p;
     p = start;
     while (p != NULL)
     {
         cout << p->info << "\t";
         p = p->link;
     }
-    cout << "\n";
+    cout << endl;
+
+    node *iterator;
+    iterator = start;
+    while (iterator != NULL)
+    {
+        iterator->info *= 2;
+        cout << iterator->info << "\t";
+        iterator = iterator->link;
+    }
+    cout << endl;
     return 0;
 }

@@ -1,39 +1,80 @@
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main()
+// {
+//    int K = 0, ITEM = 0, N;
+
+//    cout << "Enter the size of Array : ";
+//    cin >> N;
+//    int Linear_array[N + 1];
+//    cout << "Enter the Array Element " << endl;
+//    for (int i = 0; i < N; i++)
+//    {
+//       cin >> Linear_array[i];
+//    }
+//    cout << endl;
+
+//    cout << "Enter the index (K) where you want to insert the element: ";
+//    cin >> K;
+//    cout << "Enter the element (ITEM) you want to insert: ";
+//    cin >> ITEM;
+
+//    int J = N
+//    while (J >= K - 1)
+//    {
+//       Linear_array[J + 1] = Linear_array[J];
+//       J = J - 1;
+//    }
+//    Linear_array[K - 1] = ITEM;
+//    N = N + 1;
+//    cout << "Linear Array after inserion: " << endl;
+//    for (int i = 0; i < N; i++)
+//    {
+//       cout << Linear_array[i] << "\t";
+//    }
+//    cout << endl;
+//    return 0;
+// }
+
 #include <bits/stdc++.h>
 using namespace std;
-int c = 2;
 
 int main()
 {
-   //  char variable,a,e,i,o,u,A,E,I,O,U;
-   // cout << "a & b = " << (a&b) << endl;
-   // cout << "a | b = " << (a|b) << endl;
-   // cout << "a ^ b = " << (a^b) << endl;
-   // cout << "~a = " << (~a) << endl;
-   // cout << "~b = " << (~b) << endl;
-   // cout << "a >> =" << () << endl;
-   // int a,b,c;
-   // cin >> a;
-   // cin >> b;
-   // cin >> c;
-   // char negative , positive;
-   // cout << (a > 0  ? "positive \n" : "negative \n");
-   // cout << " no is  " << sign << endl;
-   // variable = e;
-   //  cin >> variable;
-   // cout << (variable == a|e|i|o|u|A|E|I|O|U ? "vowel \n" : "consonant \n");
-   // int num;
-   // cin >> num;
+   int K = 0, ITEM = 0, N;
 
-   // cout << (num % 2 == 0 ? "even \n" : "odd \n");
-   // cin >> 
-   // cout << 
-   // cout << (variable == a|e|i|o|u|A|E|I|O|U ? "vowel \n" : "consonant \n");
-//    char a;
-//   cout << (a>='a'&& a<='z'|| a>='A'&& a<='Z');
+   cout << "Enter the size of Array : ";
+   cin >> N;
+   int Linear_array[N + 1];
+   cout << "Enter the Array Element " << endl;
+   for (int i = 0; i < N; i++)
+   {
+      cin >> Linear_array[i];
+   }
+   cout << endl;
+   cout << "Displaying the array : " << endl;
+   for (int i = 0; i < N; ++i)
+   {
+      cout << Linear_array[i] << "\t";
+   }
+   cout << endl;
 
-   int c = 24;
+   cout << "Enter the element Index you want to delete: ";
+   cin >> K;
 
-cout << "c = "<< ::c << endl;
+   ITEM = Linear_array[K];
+   for (int J = K; J < N; ++J)
+   {
+      Linear_array[J - 1] = Linear_array[J];
+   }
+   N = N - 1;
+
+   cout << "Displaying the array after deletion: " << endl;
+   for (int i = 0; i < N; i++)
+   {
+      cout << Linear_array[i] << "\t";
+   }
+
    return 0;
 }
-   
