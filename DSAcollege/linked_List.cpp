@@ -8,7 +8,7 @@ struct node
 int main()
 {
     int n, data;
-    node *start = NULL;
+    node *start = NULL;                                             
     cout << "Enter the size and elements of the linked list\n";
     cin >> n;
     int i = 0; 
