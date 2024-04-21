@@ -33,8 +33,7 @@ int main()
         }
         K++;
     }
-        if (K > Max)
-            foundAt = 0;
+
 
         cout << "P = " << Req << endl;
         cout << "T = " << Main << endl;
