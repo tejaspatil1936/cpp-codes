@@ -15,7 +15,7 @@ int main()
 
     for (int i = 0; i < size; i++)
     {
-        cin >> data;
+        cin >> data;      
         node *temp = new node;
         temp->info = data;
         temp->link = NULL;

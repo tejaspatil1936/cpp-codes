@@ -8,7 +8,6 @@ struct node
 int main()
 {
     int size, data;
-
     cout << "Enter the size of linked list : ";
     cin >> size;
 
@@ -42,14 +41,14 @@ int main()
     }
     cout << endl;
 
-    node *iterator;
-    iterator = start;
-    while (iterator != NULL)
-    {
-        iterator->info *= 2;
-        cout << iterator->info << "\t";
-        iterator = iterator->link;
-    }
-    cout << endl;
+    // node *iterator;
+    // iterator = start;
+    // while (iterator != NULL)
+    // {
+    //     iterator->info *= 2;
+    //     cout << iterator->info << "\t";
+    //     iterator = iterator->link;
+    // }
+    // cout << endl;
     return 0;
 }
