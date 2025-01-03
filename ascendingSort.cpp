@@ -17,7 +17,7 @@ int main()
         int mini = i;
         for (int j = 0; j < count; j++)
         {
-            /* code */
+            //  code 
         }
         
     }
