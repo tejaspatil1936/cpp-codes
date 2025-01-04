@@ -6,7 +6,7 @@ int add(int a, int b)
 }
 int main()
 {
-    int c = add(5,6);
+    int c = add(5, 6);
     cout << c << endl;
     return 0;
 }
