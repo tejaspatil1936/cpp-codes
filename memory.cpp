@@ -6,7 +6,6 @@ int *fun(int *a)
 }
 int main()
 {
-    
     cout << fun(5) << endl;
     return 0;
 }
