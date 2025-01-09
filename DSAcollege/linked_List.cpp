@@ -8,10 +8,10 @@ struct node
 int main()
 {
     int n, data;
-    node *start = NULL;                                             
+    node *start = NULL;
     cout << "Enter the size and elements of the linked list\n";
     cin >> n;
-    int i = 0; 
+    int i = 0;
     do
     {
         cin >> data;
@@ -33,7 +33,7 @@ int main()
         }
         i++;
     } while (i < n);
-    
+
     cout << "Elements in the linked list are as follows:\n";
     struct node *p;
     p = start;
