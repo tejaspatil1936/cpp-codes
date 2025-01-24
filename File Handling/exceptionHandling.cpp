@@ -3,12 +3,16 @@
 #include <exception>
 using namespace std;
 
-int main() {
-    try {
+int main()
+{
+    try
+    {
         ifstream file("nonexistent.txt");
-        if(!file) throw runtime_error("File not found");
+        if (!file)
+            throw runtime_error("File not found");
     }
-    catch(const exception& e) {
+    catch (const exception &e)
+    {
         cerr << "Error: " << e.what();
     }
     return 0;
