@@ -2,10 +2,14 @@
 #include <cstdio>
 using namespace std;
 
-int main() {
-    if(rename("old.txt", "new.txt") == 0) {
+int main()
+{
+    if (rename("old.txt", "new.txt") == 0)
+    {
         cout << "File renamed!";
-    } else {
+    }
+    else
+    {
         perror("Error renaming");
     }
     return 0;
