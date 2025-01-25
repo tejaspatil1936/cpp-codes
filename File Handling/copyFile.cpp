@@ -2,7 +2,8 @@
 #include <fstream>
 using namespace std;
 
-int main() {
+int main()
+{
     ifstream src("source.txt", ios::binary);
     ofstream dest("dest.txt", ios::binary);
     dest << src.rdbuf();
