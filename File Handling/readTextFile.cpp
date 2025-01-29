@@ -3,15 +3,20 @@
 #include <string>
 using namespace std;
 
-int main() {
+int main()
+{
     ifstream file("example.txt");
     string line;
-    if(file.is_open()) {
-        while(getline(file, line)) {
+    if (file.is_open())
+    {
+        while (getline(file, line))
+        {
             cout << line << endl;
         }
         file.close();
-    } else {
+    }
+    else
+    {
         cerr << "Unable to open file!";
     }
     return 0;
