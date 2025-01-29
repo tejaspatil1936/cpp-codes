@@ -2,9 +2,11 @@
 #include <fstream>
 using namespace std;
 
-int main() {
+int main()
+{
     ifstream file("example.txt", ios::ate | ios::binary);
-    if(file.is_open()) {
+    if (file.is_open())
+    {
         cout << "File size: " << file.tellg() << " bytes";
         file.close();
     }
