@@ -6,7 +6,7 @@ void pattern10(int N)
     for (int i = 1; i <= 2 * N - 1; i++)
     {
         int stars = i;
-        
+
         if (i > N)
             stars = 2 * N - i;
 
