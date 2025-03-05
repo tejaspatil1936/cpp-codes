@@ -21,7 +21,7 @@ int main()
         char c;
         cout << "enter the character : ";
         cin >> c;
-        cout << hash[c-'a'] << endl;
+        cout << hash[c - 'a'] << endl;
     }
 
     return 0;
