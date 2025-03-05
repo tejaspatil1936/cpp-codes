@@ -1,9 +1,10 @@
 #include <iostream>
 #include <typeinfo>
-#include <vector>  
-#include <map>     
+#include <vector>
+#include <map>
 
-int main() {
+int main()
+{
     std::cout << "Type of std::cout: " << typeid(std::cout).name() << std::endl;
     std::cout << "Type of std::cin: " << typeid(std::cin).name() << std::endl;
     std::cout << "Type of std::string: " << typeid(std::string).name() << std::endl;
