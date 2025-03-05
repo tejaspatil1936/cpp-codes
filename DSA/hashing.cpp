@@ -20,7 +20,7 @@ int main()
     }
 
     int query;
-    
+
     cout << "Enter the no of Queries ";
     cin >> query;
 
@@ -31,9 +31,8 @@ int main()
 
         cout << Element << " occured " << myHashArray[Element] << " times" << endl;
     }
-    
 
     return 0;
 }
-// this code is valid for nos in range of 0 to 15 i.e. (lenght of hasharray - 1) 
-// hash array will store no n occured how many times at nth index of hash array  
+// this code is valid for nos in range of 0 to 15 i.e. (lenght of hasharray - 1)
+// hash array will store no n occured how many times at nth index of hash array
