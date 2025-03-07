@@ -16,7 +16,7 @@ int main()
     cout << "\n";
     cout << "Enter the element that u want to search in the array\n";
     cin >> item;
-    /*binary search algorithm logic begins here*/
+
     beg = 0;
     end = n - 1;
     mid = (beg + end) / 2;
