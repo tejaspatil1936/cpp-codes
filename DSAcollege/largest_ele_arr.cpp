@@ -25,10 +25,10 @@ int main()
         }
         if (max < data[k])
         {
-            location = k+1;
-            max = data[k]; 
-        } 
+            location = k + 1;
+            max = data[k];
+        }
     }
 
     return 0;
-} 
+}
