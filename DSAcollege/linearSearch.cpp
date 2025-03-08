@@ -12,7 +12,7 @@ int main()
     cout << "Enter the elements of the array\n";
     for (i = 0; i < n; i++)
     {
-        cin >> DATA[i]; 
+        cin >> DATA[i];
     }
     cout << "Enter the number to check whether in array: ";
     cin >> ITEM;
@@ -34,7 +34,6 @@ int main()
     {
         cout << "location : " << loc + 1 << endl;
     }
-    
 
     return 0;
 }
